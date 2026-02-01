@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Student</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="container mt-5">
+    <div class="card p-4 shadow-sm">
+        <h2 class="text-center mb-4">Add New Student</h2>
+        <form th:action="@{/saveStudent}" th:object="${student}" method="POST">
+            <div class="mb-3">
+                <label class="form-label">Name:</label>
+                <input type="text" th:field="*{name}" class="form-control" placeholder="Enter name" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Age:</label>
+                <input type="number" th:field="*{age}" class="form-control" placeholder="Enter age" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Course:</label>
+                <input type="text" th:field="*{course}" class="form-control" placeholder="Enter course" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email:</label>
+                <input type="email" th:field="*{email}" class="form-control" placeholder="Enter email" required />
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-success px-4 btn-hover-effect">Save Student</button>
+                <a href="/" class="btn btn-secondary px-4 btn-hover-effect">Cancel</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
