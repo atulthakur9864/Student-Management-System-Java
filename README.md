@@ -11,7 +11,7 @@ A full-stack web application built using **Java, Spring Boot, and MySQL**. This 
 
 ## 🛠️ Tech Stack
 * **Backend**: Java 17, Spring Boot, Spring Data JPA.
-* **Frontend**: Thymeleaf, HTML5, CSS3, Bootstrap 5.
+* **Frontend**: Thymeleaf, HTML5, CSS3.
 * **Database**: MySQL.
 * **Security**: Spring Security.
 
